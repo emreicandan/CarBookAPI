@@ -15,10 +15,12 @@ using MediatR;
 
 namespace CarBook.Application.Features.CarFeature.Commands;
 
-    public class UpdateCarCommand:IRequest<UpdatedCarDto>,IRequestValidator
+    public class UpdateCarCommand:IRequest<UpdatedCarDto> , IRequestValidator
     {
-    public int Id {get;set;}
+    public int Id { get; set; }
     public int BrandId { get; set; }
+
+    public int CategoryId { get; set; }
     public string Model { get; set; }
 
     public string ImageUrl { get; set; }
@@ -33,18 +35,16 @@ namespace CarBook.Application.Features.CarFeature.Commands;
 
     public string Fuel { get; set; }
 
-    [JsonIgnore]
-    public IEnumerable<IValidator> Validators { get ; set ; } = [new UpdateCarValidator()];
-
-    public class Handler(ICarRepository carRepository, IMapper mapper) : IRequestHandler<UpdateCarCommand, UpdatedCarDto>
-    {
-        public async Task<UpdatedCarDto> Handle(UpdateCarCommand request, CancellationToken cancellationToken)
+        [JsonIgnore]
+        public IEnumerable<IValidator> Validators{ get; set; } = [new UpdateCarValidator()];
+        public class Handler(ICarRepository carRepository, IMapper mapper) : IRequestHandler<UpdateCarCommand, UpdatedCarDto>
         {
-            var car = mapper.Map<Car>(await carRepository.GetAsync(c=>c.Id == request.Id)).MapWithSource(request);
+            public async Task<UpdatedCarDto> Handle(UpdateCarCommand request, CancellationToken cancellationToken)
+            {
+                var car = mapper.Map<Car>( await carRepository.GetAsync(b=> b.Id == request.Id)).MapWithSource(request);
+                var updatedCar = await carRepository.UpdateAsync(car);
 
-            var updatedCar = await carRepository.UpdateAsync(car);
-
-            return mapper.Map<UpdatedCarDto>(updatedCar);
+                return mapper.Map<UpdatedCarDto>(updatedCar);
+            }
         }
     }
-}

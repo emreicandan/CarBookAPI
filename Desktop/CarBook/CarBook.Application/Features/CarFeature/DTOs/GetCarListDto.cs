@@ -10,6 +10,9 @@ namespace CarBook.Application.Features.CarFeature.DTOs;
     public int Id {get;set;}
     public int BrandId { get; set; }
 
+    public int CategoryId { get; set; }
+
+    public Category Category{ get; set; }
     public Brand Brand { get; set; }
 
     public string Model { get; set; }
@@ -26,4 +29,6 @@ namespace CarBook.Application.Features.CarFeature.DTOs;
 
     public string Fuel { get; set; }
     public List<CarPayment> CarPayments { get; set; }
+
+    public List<CarBook.Domain.Entities.CarFeature> CarFeatures { get; set; }
     }

@@ -38,7 +38,7 @@ namespace CarBook.WebAPI.Controllers
         [HttpPut("Update")]
         public async Task<IActionResult> Update(UpdateCarCommand command){
 
-            var result = mediatR.Send(command);
+            var result = await mediatR.Send(command);
 
             return Ok(result);
         }

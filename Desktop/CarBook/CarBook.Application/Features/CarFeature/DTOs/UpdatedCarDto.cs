@@ -7,6 +7,7 @@ namespace CarBook.Application.Features.CarFeature.DTOs
 {
     public class UpdatedCarDto
     {
+    public int Id { get; set; }
     public int BrandId { get; set; }
     public string Model { get; set; }
 

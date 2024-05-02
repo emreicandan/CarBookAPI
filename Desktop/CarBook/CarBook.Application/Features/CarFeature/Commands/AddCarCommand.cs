@@ -17,6 +17,8 @@ namespace CarBook.Application.Features.CarFeature.Commands;
     {
     public int BrandId { get; set; }
 
+    public int CategoryId { get; set; } 
+
     public string Model { get; set; }
 
     public string ImageUrl { get; set; }

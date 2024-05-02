@@ -17,7 +17,7 @@ namespace CarBook.Application.Features.CarFeature.Commands
         {
             public async Task<bool> Handle(DeleteCarCommand request, CancellationToken cancellationToken)
             {
-                var car = mapper.Map<Car>(request);
+                var car = mapper.Map<Car>(await carRepository.GetAsync( c => c.Id == request.Id));
 
                 await carRepository.DeleteAsync(car);
 
