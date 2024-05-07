@@ -13,3 +13,4 @@
 /Users/emrecandan/Desktop/CarBook/CarBook.Application/obj/Debug/net8.0/refint/CarBook.Application.dll
 /Users/emrecandan/Desktop/CarBook/CarBook.Application/obj/Debug/net8.0/CarBook.Application.pdb
 /Users/emrecandan/Desktop/CarBook/CarBook.Application/obj/Debug/net8.0/ref/CarBook.Application.dll
+/Users/emrecandan/Desktop/CarBook/CarBook.Application/obj/Debug/net8.0/CarBook.Application.sourcelink.json

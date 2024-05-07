@@ -9,3 +9,5 @@
 /Users/emrecandan/Desktop/CarBook/CarBook.Domain/obj/Debug/net8.0/refint/CarBook.Domain.dll
 /Users/emrecandan/Desktop/CarBook/CarBook.Domain/obj/Debug/net8.0/CarBook.Domain.pdb
 /Users/emrecandan/Desktop/CarBook/CarBook.Domain/obj/Debug/net8.0/ref/CarBook.Domain.dll
+/Users/emrecandan/Desktop/CarBook/CarBook.Domain/obj/Debug/net8.0/CarBook.Domain.sourcelink.json
+/Users/emrecandan/Desktop/CarBook/CarBook.Domain/obj/Debug/net8.0/CarBook.Domain.csproj.AssemblyReference.cache

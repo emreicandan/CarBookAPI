@@ -79,3 +79,4 @@
 /Users/emrecandan/Desktop/CarBook/CarBook.WebAPI/bin/Debug/net8.0/CarBook.Persistence.pdb
 /Users/emrecandan/Desktop/CarBook/CarBook.WebAPI/bin/Debug/net8.0/CarBook.Application.pdb
 /Users/emrecandan/Desktop/CarBook/CarBook.WebAPI/bin/Debug/net8.0/CarBook.Domain.pdb
+/Users/emrecandan/Desktop/CarBook/CarBook.WebAPI/obj/Debug/net8.0/CarBook.WebAPI.sourcelink.json

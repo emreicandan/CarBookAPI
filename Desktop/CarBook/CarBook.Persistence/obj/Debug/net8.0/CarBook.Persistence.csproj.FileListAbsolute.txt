@@ -17,3 +17,4 @@
 /Users/emrecandan/Desktop/CarBook/CarBook.Persistence/obj/Debug/net8.0/CarBook.Persistence.pdb
 /Users/emrecandan/Desktop/CarBook/CarBook.Persistence/obj/Debug/net8.0/CarBook.Persistence.genruntimeconfig.cache
 /Users/emrecandan/Desktop/CarBook/CarBook.Persistence/obj/Debug/net8.0/ref/CarBook.Persistence.dll
+/Users/emrecandan/Desktop/CarBook/CarBook.Persistence/obj/Debug/net8.0/CarBook.Persistence.sourcelink.json
